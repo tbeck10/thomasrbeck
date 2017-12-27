@@ -79,3 +79,9 @@ body {
 .btn:active {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
+
+/* Services */
+
+#services {
+  text-align: center;
+}
