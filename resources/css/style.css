@@ -84,4 +84,21 @@ body {
 
 #services {
   text-align: center;
+  width: 60%;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+#services h2 {
+  text-transform: uppercase;
+}
+
+#services i {
+  padding: 1.5rem 0;
+}
+
+#services li {
+  font-size: 1.25rem;
 }
