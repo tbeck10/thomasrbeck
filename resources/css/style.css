@@ -8,6 +8,14 @@ body {
   font-family: "Lora", serif;
 }
 
+.strong {
+  font-weight: bold;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
 .image-container {
   overflow: hidden;
 }
@@ -87,18 +95,33 @@ body {
   width: 60%;
 }
 
-.strong {
-  font-weight: bold;
-}
-
-#services h2 {
-  text-transform: uppercase;
-}
-
 #services i {
   padding: 1.5rem 0;
 }
 
 #services li {
   font-size: 1.25rem;
+}
+
+/* Portfolio */
+
+#portfolio {
+  text-align: center;
+  width: 85%;
+  background-color: #bfbfbf;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+#portfolio h2 {
+}
+
+#portfolio .image-container {
+  height: 20rem;
+  padding: 2rem;
+}
+
+#portfolio p {
+  font-size: 1.25rem;
+  padding-top: 1rem;
 }
