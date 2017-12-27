@@ -8,6 +8,16 @@ body {
   font-family: "Lora", serif;
 }
 
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Navigation */
 
 .navbar {
@@ -16,7 +26,7 @@ body {
 
 .navbar-default {
   background-color: #eeeeee;
-  border-color: #000000;
+  border-color: #95989a;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -25,4 +35,47 @@ body {
 
 .navbar-default .navbar-nav>li>a:hover {
   color: #6c7a89;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  height: 44rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 11.85rem 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.jumbotron-jumpstart {
+  background-image: url(../images/jumpstart.jpg);
+}
+
+.jumbotron h1 {
+  padding: 1rem 0;
+  text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.jumbotron p {
+  padding: 1rem 0;
+}
+
+/* Button Styles */
+
+.btn {
+  width: 11.4rem;
+  border: 1px solid #6c7a89;
+  margin-top: 2.8rem;
+  background-color: #6c7a89;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+.btn:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
