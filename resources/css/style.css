@@ -21,6 +21,10 @@ h2 {
   display: none;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .image-container {
   overflow: hidden;
 }
@@ -62,10 +66,6 @@ h2 {
 
 .navbar-default .navbar-nav>li>a:hover {
   color: #6c7a89;
-}
-
-.nav {
-  cursor: pointer;
 }
 
 .mobile-list {
@@ -132,7 +132,6 @@ h2 {
   margin-top: 2.8rem;
   background-color: #6c7a89;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
 }
 
 .btn:hover {
