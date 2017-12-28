@@ -47,10 +47,6 @@ h2 {
 
 /* Navigation */
 
-nav {
-  height: 20px;
-}
-
 .navbar {
   font-size: 1.1rem;
 }
@@ -94,6 +90,26 @@ nav {
   background-image: url(../images/jumpstart.jpg);
 }
 
+.jumbotron-tea-cozy {
+  background-image: url(../images/tea-cozy.jpg);
+}
+
+.jumbotron-my-times {
+  background-image: url(../images/my-times.png);
+}
+
+.jumbotron-secret-agent-supply {
+  background-image: url(../images/secret-agent-supply.jpeg);
+}
+
+.jumbotron-tortoiseshell-optics {
+  background-image: url(../images/tortoiseshell-optics.png);
+}
+
+.jumbotron-colmar-academy {
+  background-image: url(../images/colmar-academy.jpg);
+}
+
 .jumbotron h1 {
   padding: 1rem 0;
   text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -101,6 +117,7 @@ nav {
 
 .jumbotron p {
   padding: 1rem 0;
+  text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 /* Button Styles */
