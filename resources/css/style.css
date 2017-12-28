@@ -17,6 +17,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.mobile {
+  display: none;
+}
+
 .image-container {
   overflow: hidden;
 }
@@ -42,6 +46,10 @@ h2 {
 }
 
 /* Navigation */
+
+nav {
+  height: 20px;
+}
 
 .navbar {
   font-size: 1.1rem;
@@ -188,4 +196,11 @@ footer a {
 
 footer i {
   margin-top: 2rem;
+}
+
+/* Hamburger Icon */
+
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
 }

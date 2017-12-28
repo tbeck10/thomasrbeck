@@ -1,12 +1,6 @@
 $(document).ready(function() {
 
-  $("#nav-toggle").on("click", function(event){
-    event.preventDefault();
-    $(".mobile-list").slideToggle();
-    $(this).toggleClass("active");
-  });
-
-  $(".mobile-list a").on("click", function(event){
+  $(".navbar-nav a").on("click", function(event){
     event.preventDefault();
     var navHeight = $("nav").height();
     var id = $(this).attr("href");
@@ -15,7 +9,6 @@ $(document).ready(function() {
     $("html").animate({
       scrollTop : newScrollCoordinate
     });
-
   });
 
-})
+});
