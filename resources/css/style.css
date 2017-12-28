@@ -6,6 +6,7 @@ html {
 
 body {
   font-family: "Lora", serif;
+  background-color: #eeeeee;
 }
 
 .strong {
@@ -120,6 +121,7 @@ h2 {
   text-align: center;
   width: 85%;
   margin: auto;
+  padding: 1rem 0;
 }
 
 #portfolio .image-container {
@@ -130,4 +132,24 @@ h2 {
 #portfolio p {
   font-size: 1.25rem;
   padding-top: 1rem;
+}
+
+/* Contact */
+
+#contact {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+#contact h2 {
+  padding: 1rem 0;
+}
+
+#contact input {
+  padding: 1rem;
+}
+
+#contact #message-input {
+  padding-bottom: 6rem;
 }
