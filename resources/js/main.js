@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   //Offset navbar when clicking anchor
 
-  $(".navbar a").click(function(event){
+  $(".navbar a").on("click", function(event){
     event.preventDefault();
     var navHeight = $("nav").height();
     var id = $(this).attr("href");
@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   //Offset & animate jumbotron anchor
 
-  $(".jumbotron a").click(function(event){
+  $(".jumbotron a").on("click", function(event){
     event.preventDefault();
     var navHeight = $("nav").height();
     var id = $(this).attr("href");
