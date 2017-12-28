@@ -2,12 +2,12 @@
 
 html {
   font-size: 14px;
-  cursor: pointer;
 }
 
 body {
   font-family: "Lora", serif;
   background-color: #eeeeee;
+  cursor: pointer;
 }
 
 .strong {
