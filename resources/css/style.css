@@ -7,7 +7,6 @@ html {
 body {
   font-family: "Lora", serif;
   background-color: #eeeeee;
-  cursor: pointer;
 }
 
 .strong {
@@ -16,6 +15,10 @@ body {
 
 h2 {
   text-transform: uppercase;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .mobile {
