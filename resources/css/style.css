@@ -17,10 +17,6 @@ h2 {
   text-transform: uppercase;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 .mobile {
   display: none;
 }
@@ -53,6 +49,10 @@ a:hover {
 
 .navbar {
   font-size: 1.1rem;
+}
+
+.navbar a {
+  cursor: pointer;
 }
 
 .navbar-default {
@@ -122,6 +122,10 @@ a:hover {
 .jumbotron p {
   padding: 1rem 0;
   text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.jumbotron a {
+  cursor: pointer;
 }
 
 /* Button Styles */
