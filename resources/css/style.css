@@ -17,10 +17,6 @@ h2 {
   text-transform: uppercase;
 }
 
-a {
-  cursor: pointer;
-}
-
 .mobile {
   display: none;
 }
