@@ -26,6 +26,12 @@ h2 {
   display: block;
 }
 
+@media only screen and (min-width: 1090px) {
+  .container {
+    max-width: 1090px;
+  }
+}
+
 /* Navigation */
 
 .navbar {
@@ -93,6 +99,7 @@ h2 {
 #services {
   text-align: center;
   width: 60%;
+  margin-bottom: 2rem;
 }
 
 #services i {
@@ -106,18 +113,17 @@ h2 {
 /* Portfolio */
 
 #portfolio {
-  text-align: center;
-  width: 85%;
   background-color: #bfbfbf;
-  padding: 2rem 0;
-  margin-top: 2rem;
 }
 
-#portfolio h2 {
+#portfolio .container {
+  text-align: center;
+  width: 85%;
+  margin: auto;
 }
 
 #portfolio .image-container {
-  height: 20rem;
+  max-height: 20rem;
   padding: 2rem;
 }
 
