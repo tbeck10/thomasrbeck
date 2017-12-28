@@ -2,6 +2,7 @@
 
 html {
   font-size: 14px;
+  cursor: pointer;
 }
 
 body {
@@ -74,10 +75,6 @@ h2 {
   display: block;
 }
 
-.navbar a {
-  cursor: pointer;
-}
-
 /* Jumbotron */
 
 .jumbotron {
@@ -122,10 +119,6 @@ h2 {
 .jumbotron p {
   padding: 1rem 0;
   text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.jumbotron a {
-  cursor: pointer;
 }
 
 /* Button Styles */
