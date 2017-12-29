@@ -21,7 +21,7 @@ $(document).ready(function() {
     var id = $(this).attr("href");
     var originalScrollCoordinate = $(id).offset().top;
     var newScrollCoordinate = originalScrollCoordinate - navHeight;
-    $("html").animate({
+    $("body, html").animate({
       scrollTop : newScrollCoordinate
     });
   });
