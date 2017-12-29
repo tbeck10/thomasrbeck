@@ -2,21 +2,19 @@ $(document).ready(function() {
 
   //Offset navbar when clicking anchor
 
-  $(".navbar a").css('cursor', 'pointer');
   $(".navbar a").on("click", function(event){
     event.preventDefault();
     var navHeight = $("nav").height();
     var id = $(this).attr("href");
     var originalScrollCoordinate = $(id).offset().top;
     var newScrollCoordinate = originalScrollCoordinate - navHeight;
-    $("html").animate({
+    $("body, html").animate({
       scrollTop : newScrollCoordinate
     });
   });
 
   //Offset & animate jumbotron anchor
 
-  $(".jumbotron a").css('cursor', 'pointer');
   $(".jumbotron a").on("click", function(event){
     event.preventDefault();
     var navHeight = $("nav").height();
