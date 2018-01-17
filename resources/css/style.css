@@ -142,6 +142,22 @@ body {
   padding: 1rem;
 }
 
+@media only screen and (max-width: 786px) {
+  #about .image-container {
+    height: 9rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #about {
+    width: 100%;
+  }
+  #about .image-container {
+    height: 12.5rem;
+  }
+}
+
+
 /* Business */
 
 .business {
@@ -156,6 +172,16 @@ body {
   float: left;
   margin: 15rem 0 0 10rem;
   width: 45%;
+}
+
+@media only screen and (max-width: 425px) {
+  .business {
+    height: 25rem;
+  }
+  .business h2 {
+    font-size: 1.25rem;
+    margin: 12rem 0 0 5rem;
+  }
 }
 
 /* Portfolio */
