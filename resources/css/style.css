@@ -142,27 +142,56 @@ body {
   padding: 1rem;
 }
 
+/* Business */
+
+.business {
+  background-image: url(../images/business-section.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.business h2 {
+  float: left;
+  margin: 15rem 0 0 10rem;
+  width: 45%;
+}
+
 /* Portfolio */
 
 #portfolio {
-  background-color: #bfbfbf;
+  background-color: #ffffff;
+  padding: 2rem 0;
+}
+
+#portfolio h2 {
+  padding-bottom: 1rem;
+}
+
+#portfolio h3 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
 }
 
 #portfolio .container {
   text-align: center;
-  width: 85%;
+  width: 90%;
   margin: auto;
-  padding: 1rem 0;
 }
 
-#portfolio .image-container {
-  max-height: 20rem;
-  padding: 2rem;
+#portfolio .image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.9;
+  transition: transform 0.5s,
+              opacity 0.5s;
 }
 
-#portfolio p {
-  font-size: 1.25rem;
-  padding-top: 1rem;
+#portfolio .image-container img:hover {
+  opacity: 1;
+  transform: scale(1.3);
 }
 
 /* Contact */
@@ -180,6 +209,7 @@ body {
 
 #contact input {
   padding: 1rem;
+  margin: 1rem 0;
 }
 
 #contact #message-input {
