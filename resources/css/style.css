@@ -51,6 +51,11 @@ h2 {
   font-size: 1.1rem;
 }
 
+.navbar-brand {
+  padding-right: 4rem;
+  font-weight: bold;
+}
+
 .navbar-default {
   background-color: #eeeeee;
   border-color: #95989a;
@@ -77,56 +82,35 @@ h2 {
 /* Jumbotron */
 
 .jumbotron {
-  height: 44rem;
+  height: 42rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 11.85rem 0;
   text-align: center;
   color: #ffffff;
-}
-
-.jumbotron-jumpstart {
-  background-image: url(../images/jumpstart.jpg);
-}
-
-.jumbotron-tea-cozy {
-  background-image: url(../images/tea-cozy.jpg);
-}
-
-.jumbotron-my-times {
-  background-image: url(../images/my-times.png);
-}
-
-.jumbotron-secret-agent-supply {
-  background-image: url(../images/secret-agent-supply.jpeg);
-}
-
-.jumbotron-tortoiseshell-optics {
-  background-image: url(../images/tortoiseshell-optics.png);
-}
-
-.jumbotron-colmar-academy {
-  background-image: url(../images/colmar-academy.jpg);
+  background-image: url(../images/jumbotron.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .jumbotron h1 {
   padding: 1rem 0;
-  text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .jumbotron p {
-  padding: 1rem 0;
-  text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  padding: 2rem 0;
+  width: 20rem;
+  margin: auto;
 }
 
 /* Button Styles */
 
 .btn {
   width: 11.4rem;
-  border: 1px solid #6c7a89;
-  margin-top: 2.8rem;
-  background-color: #6c7a89;
+  margin-top: 3.5rem;
+  padding: 1.5rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
