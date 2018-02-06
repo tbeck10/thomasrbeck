@@ -38,5 +38,31 @@ $(document).ready(function() {
     draggable: false,
     pauseOnFocus: false,
   });
+  
+  //Contact Form
+  $.ajax({
+    url: "/rest/contact/",
+    type: "POST",
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    data: JSON.stringify({
+        name: name,
+        phone: phone,
+        email: email,
+        message: message
+    }),
+    cache: false,
+    success: function (response) {
+        if (response.errorMessage) {
+            this.error(response.errorMessage);
+            return;
+        }
+
+        // process success message
+    },
+    error: function (msg) {
+        // process errors
+    }
+});
 
 });
