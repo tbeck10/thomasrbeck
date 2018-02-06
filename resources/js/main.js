@@ -64,5 +64,12 @@ $(document).ready(function() {
         // process errors
     }
 });
+  
+  //JSON
+  $('[data-customer-form]').on('submit', function (e) {
+                e.preventDefault();
+                var json = $(this).formToJson({pretty: true, delimiter: '.'});
+                console.log(json);
+            });
 
 });
