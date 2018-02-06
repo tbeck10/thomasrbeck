@@ -19,6 +19,30 @@
   <link rel="stylesheet" type="text/css" href="./resources/slick/slick-theme.css"/>
   <!-- Custom CSS -->
   <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+  <script src="aws-sdk/dist/aws-sdk.min.js"></script>
+  <script type="text/javascript">
+    var LPAWS = {};
+    
+    // Initialize the Amazon Cognito credentials provider
+    AWS.config.region = us-east-1; // Region
+    AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+      IdentityPoolId: 'us-east-1:041902390190:userpool/us-east-1_FtcEuDJ2O'
+    });
+    
+    LPAWS.sendToTopic = function() {
+      var sns = new AWS.SNS();
+      var params = {
+        //Message: "Hello topic', /* required */
+        Message: document.querySelector('#input-msg').value,
+        Subject: 'Browser SNS publish - contact form',
+        TopicArn: 'arn:aws:sns:us-east-1:041902390190:portfolio-contact-form'
+      };
+      sns.publish(params, function(err, data) {
+        if (err) console.log(err, err.stack); // an error occurred
+        else     console.log(data);           // successful response
+      });
+    };
+  </script>
 </head>
 
 <body>
@@ -128,15 +152,15 @@
       <h2>Contact</h2>
     </div>
     <div class="row">
-      <input class="col-xs-12" id="name-input" placeholder="Name">
+      <input class="col-xs-12" id="name-input" placeholder="Name"/>
     </div>
     <div class="row">
-      <input class="col-xs-12" id="email-input" placeholder="Email">
+      <input class="col-xs-12" id="email-input" placeholder="Email"/>
     </div>
     <div class="row">
-      <input class="col-xs-12" id="message-input" placeholder="Message">
+      <input class="col-xs-12" type="text" name="msg" id="input-msg" placeholder="Message"/>
     </div>
-    <a class="btn btn-warning btn-lg" href="#">Get Started</a>
+    <a class="btn btn-warning btn-lg" onclick="LPAWS.sendToTopic(); return false;">Get Started</a>
   </div>
 
   <!-- Footer -->
